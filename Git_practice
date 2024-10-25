@@ -1,0 +1,3 @@
+dsn_tns = oracledb.makedsn(host, port, service_name=service_name)  # Adjust this
+conn = oracledb.connect(user=username, password=password, dsn=dsn_tns)
+cursor = conn.cursor()
